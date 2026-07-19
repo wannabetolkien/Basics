@@ -5,7 +5,7 @@ import java.util.*;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class TodoRepository {
+public class InMemoryTodoRepository implements ITodoRepository {
     private List<Todo> todos = new ArrayList<>(Arrays.asList(new Todo("1","Buy Grocery")));
 
     public List<Todo> findAll(){
