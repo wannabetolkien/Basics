@@ -1,4 +1,4 @@
-package com.nabeel.todoapp.schema;
+package com.nabeel.todoapp.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Todo {
-    private String id;
-    private String content;  
+public class createTodoDTO {
+    private String content;
 }
